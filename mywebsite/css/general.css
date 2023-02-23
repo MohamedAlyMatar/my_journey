@@ -55,17 +55,19 @@ button:focus {
     height: auto;
 }
 
-#header h2 {
+#wellcome {
     margin: 0;
     vertical-align: center;
-    font-size: 36px;
+    font-size: 20px;
     padding: 20px;
+    color: white;
 }
 
 
 /* top nav styles */
 
 .topnav {
+    z-index: 3;
     overflow: hidden;
     background-color: #191919;
     display: flex;
@@ -235,8 +237,8 @@ button:focus {
     align-items: center;
     margin: 0;
     padding: 0;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 }
 
