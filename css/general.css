@@ -266,6 +266,11 @@ button:focus {
 @media screen and (max-width: 768px) {
     .form {
         flex-direction: column;
+        width: 350px;
+    }
+    .form.alt {
+        flex-direction: column-reverse;
+        width: 350px;
     }
 }
 
