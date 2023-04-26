@@ -9,7 +9,8 @@ html {
 }
 
 body {
-    background-image: url("../src/background/silicon.png");
+    /* background-image: url("../src/background/pattern_japanese_black.png"); */
+    background-image: url("../src/background/pattern_japanese_white.png");
     margin: 0;
     font-family: monospace;
     min-height: 100vh;
