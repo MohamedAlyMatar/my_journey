@@ -1,142 +1,67 @@
-/* top nav styles */
+/* Add styles for the navigation bar */
 
-.topnav {
-    z-index: 3;
-    overflow: hidden;
-    background-color: #191919;
-    display: flex;
-    flex-direction: row;
-    position: sticky;
+.navbar {
     top: 0px;
+    z-index: 3;
+    position: sticky;
+    background-color: #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
 }
 
-
-/* logo pic */
-
-.logo {
-    margin: 10px;
-    margin-left: 10px;
-}
-
-#logoPic {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-}
-
-.logo a {
-    color: blue;
-    text-decoration: none;
-}
-
-
-/* links bar style  */
-
-
-/* Appearance */
-
-.links {
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, #100F0F, transparent);
-    border-bottom: 1px solid #0003;
-    box-shadow: 0 0 32px #0003;
-    font-size: 2em;
-    align-self: center;
-}
-
-.links>a {
-    color: #9ab;
-    padding: .75em;
-    font-size: 20px;
+.navbar p {
+    display: block;
+    color: #f2f2f2;
     text-align: center;
+    padding: 0px;
+    padding-left: 20px;
     text-decoration: none;
-    transition: all .5s;
-    align-self: center;
-}
-
-.links>a:hover {
-    background: #ffffff06;
-    color: #adf;
-}
-
-.links>a.active {
-    background-color: #191919;
-    color: white;
-}
-
-.links>.line {
-    background: #68a;
-    height: 1px;
-    pointer-events: none;
 }
 
 
-/* The Magic */
+/* Style the navigation links */
 
-.links {
-    display: grid;
-    grid-template-columns: repeat(var(--items), 1fr);
-    position: relative;
-    margin-left: auto;
-}
-
-.links>.line {
-    opacity: 0;
-    transition: all .5s;
-    position: absolute;
-    bottom: 0;
-    left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
-    width: var(--width, calc(100% / var(--items)));
-    --index: 0;
-}
-
-.links>a:hover~.line {
-    opacity: 1;
-}
-
-.links>a:nth-of-type(1):hover~.line {
-    --index: 1;
-}
-
-.links>a:nth-of-type(2):hover~.line {
-    --index: 2;
-}
-
-.links>a:nth-of-type(3):hover~.line {
-    --index: 3;
-}
-
-.links>a:nth-of-type(4):hover~.line {
-    --index: 4;
-}
-
-.links>a:nth-of-type(5):hover~.line {
-    --index: 5;
-}
-
-.links>a:nth-of-type(6):hover~.line {
-    --index: 6;
-}
-
-.links>a:nth-of-type(7):hover~.line {
-    --index: 7;
-}
-
-.links>a:nth-of-type(8):hover~.line {
-    --index: 8;
-}
-
-.links>a:nth-of-type(9):hover~.line {
-    --index: 9;
-}
-
-.links>a:nth-of-type(10):hover~.line {
-    --index: 10;
-}
-
-.links>a:last-of-type:hover~.line {
-    --index: var(--items);
+.navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 
-/* End of links style */
+/* Add styles for the sections */
+
+.navbar .sections {
+    display: flex;
+    white-space: nowrap;
+}
+
+
+/* Change color on hover */
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Add a media query for mobile devices */
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar .sections {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        white-space: nowrap;
+    }
+    .navbar .sections a {
+        margin: 0 10px;
+    }
+}

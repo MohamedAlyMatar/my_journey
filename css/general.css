@@ -3,6 +3,11 @@
     font-family: "Poppins", sans-serif;
 }
 
+canvas {
+    /* display: block; */
+    height: 270px;
+}
+
 html {
     position: relative;
     min-height: 100%;
@@ -212,20 +217,7 @@ footer {
     padding: 1rem;
     bottom: 0;
     margin-top: auto;
-}
-
-footer ul {
-    padding: 10px;
-    display: flex;
-    width: auto;
-    margin-left: auto;
-    align-content: center;
-}
-
-footer ul li {
-    padding: 10px;
-    list-style: none;
-    color: white;
+    text-align: center;
 }
 
 
